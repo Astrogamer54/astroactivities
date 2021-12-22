@@ -19,7 +19,7 @@ module.exports = class Activity extends Command {
   }
 
   async run(interaction) {
-    if (!interaction.member.guild.me.permissions.has("CREATE_INSTANT_INVITE")) {
+    if (!interaction.member.hasPermission("CREATE_INSTANT_INVITE")) {
       return interaction.reply(
         "Error: Missing Permissions\nMake sure I have the `Create Invite` permission!"
       );
