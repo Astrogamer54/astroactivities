@@ -120,6 +120,16 @@ module.exports = class Activity extends Command {
                   });
                 });
               break;
+            case "youtubedev":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "youtubedev")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join YouTube Development](${invite.code} "Join YouTube Development")`,
+                  });
+                });
+              break;
             case "poker":
               this.bot.discordTogether
                 .createTogetherCode(channel.id, "poker")
@@ -160,6 +170,16 @@ module.exports = class Activity extends Command {
                   });
                 });
               break;
+            case "chessdev":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "chessdev")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join Development Chess](${invite.code} "Join A game of Development Chess")`,
+                  });
+                });
+              break;
             case "lettertile":
               this.bot.discordTogether
                 .createTogetherCode(channel.id, "lettertile")
@@ -187,6 +207,46 @@ module.exports = class Activity extends Command {
                   await i.deferUpdate();
                   return await i.editReply({
                     content: `[Click here to join Doodle Crew](${invite.code} "Join A game of Doodle Crew")`,
+                  });
+                });
+              break;
+            case "awkword":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "awkword")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join Awkword](${invite.code} "Join A game of Awkword")`,
+                  });
+                });
+              break;
+            case "puttparty":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "puttparty")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join Puttparty](${invite.code} "Join A game of Puttparty")`,
+                  });
+                });
+              break;
+            case "spellcast":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "spellcast")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join SpellCast](${invite.code} "Join A game of SpellCast")`,
+                  });
+                });
+              break;
+            case "checkers":
+              this.bot.discordTogether
+                .createTogetherCode(channel.id, "checkers")
+                .then(async (invite) => {
+                  await i.deferUpdate();
+                  return await i.editReply({
+                    content: `[Click here to join Checkers](${invite.code} "Join A game of Checkers")`,
                   });
                 });
               break;

@@ -2,7 +2,7 @@
 
 A slash command bot for opening Discord voice channel activities.
 
-**[Add the bot](https://discord.com/api/oauth2/authorize?client_id=893159124701941802&permissions=1&scope=bot%20applications.commands)**
+**[Add the bot](https://discord.com/api/oauth2/authorize?client_id=872266709426384977&permissions=1&scope=bot%20applications.commands)**
 
 After adding the bot, use `/activity`
 
@@ -10,7 +10,7 @@ After adding the bot, use `/activity`
 
 # Contributing
 
-All contributions are greatly appreciated, but I recommend creating an issue or replying in a comment to let me know what you are working on first that way we don't overwrite each other.
+All contributions a re greatly appreciated, but I recommend creating an issue or replying in a comment to let me know what you are working on first that way we don't overwrite each other.
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on this project.
 
