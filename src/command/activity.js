@@ -47,6 +47,12 @@ module.exports = class Activity extends Command {
                 emoji: "<:youtube:892459181838323752>",
               },
               {
+                label: "Youtube Dev",
+                description: "Creates a YouTube Dev activity invite",
+                value: "youtubedev",
+                emoji: "<:youtube:892459181838323752>",
+              },
+              {
                 label: "Poker",
                 description: "Creates a Poker Night activity invite",
                 value: "poker",
@@ -71,6 +77,12 @@ module.exports = class Activity extends Command {
                 emoji: "♟️",
               },
               {
+                label: "Chess Dev",
+                description: "Creates a Dev Chess activity invite",
+                value: "chessdev",
+                emoji: "♟️",
+              },
+              {
                 label: "Letter Tile",
                 description: "Creates a Letter Tile activity invite",
                 value: "lettertile",
@@ -87,6 +99,30 @@ module.exports = class Activity extends Command {
                 description: "Creates a Doodle Crew activity invite",
                 value: "doodlecrew",
                 emoji: "🎨",
+              },
+              {
+                label: "Awkword",
+                description: "Creates a Awkword activity invite",
+                value: "awkword",
+                emoji: "😕",
+              },
+              {
+                label: "Puttparty",
+                description: "Creates a Puttparty activity invite",
+                value: "puttparty",
+                emoji: "⛳",
+              },
+              {
+                label: "Spellcast",
+                description: "Creates a Spellcast activity invite",
+                value: "spellcast",
+                emoji: "🪄",
+              },
+              {
+                label: "Checkers",
+                description: "Creates a Checkers activity invite",
+                value: "checkers",
+                emoji: "🏁",
               },
             ])
         );
@@ -109,6 +145,7 @@ module.exports = class Activity extends Command {
           });
         } else {
           const value = i.values[0];
+          console.log(channel.id + ' requested ' +value)
           switch (value) {
             case "youtube":
               this.bot.discordTogether
